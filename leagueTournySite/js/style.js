@@ -1,16 +1,16 @@
 $(document).ready(function() {
     
-    $(".noTeam").click(function() {
+    $(".free").click(function() {
         $("#add").css("display", "none")
         $("#current").css("display", "none")
     });
 
-    $(".newTeam").click(function() {
+    $(".new").click(function() {
         $("#add").css("display", "block")
         $("#current").css("display", "none")
     });
 
-    $(".oldTeam").active(function() {
+    $(".old").click(function() {
         $("#add").css("display", "none")
         $("#current").css("display", "block")
     });
