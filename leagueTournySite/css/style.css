@@ -1,0 +1,49 @@
+
+form {
+    width: 50%;
+    margin: auto;
+}
+form #info {
+    width: 45%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.checkPw {
+    width: 47%;
+    padding: 1%;
+    margin: 1%;
+}
+.checkPwContain {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.teams {
+    display: none;
+}
+#team {
+    margin-bottom: 1%;
+}
+.teamSelect {
+    margin: 1%;
+}
+
+.waiver {
+    width: 98%;
+    background-color: black;
+    height: 300px;
+    margin: 1%;
+}
+.options {
+    margin: 1%;
+}
+.submit {
+    display: none;
+    width: 47%;
+    padding: 1%;
+}
+.submitContain {
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript" src="../js/app.js"></script>
+        <script type="text/javascript" src="../js/style.js"></script>
+    </head>
+    <body>
+        <form>
+            <input id="info" class="email" type="text" placeholder="Email">
+            <input id="info" class="screenname" type="text" placeholder="Screenname" required>
+            <input id="info" class="normieFirstName" type="text" placeholder="First Name">
+            <input id="info" class="normieLastName" type="text" placeholder="Last Name">
+            <input id="info" class="pw1" type="password" placeholder="Password">
+            <input id="info" class="pw2" type="password" placeholder="Re-enter Password">
+            <div class="checkPwContain"><button type="button" class="checkPw">Check Passwords</button></div>
+            <div class="teamSelect">
+                <p>Please pick one...</P>
+                
+                <input id="team" class="noTeam" name="team" value="noTeam" type="radio" checked> Floaters (We will assign you a team if possible)<br>
+
+                <input id="team" class="newTeam" name="team" value="newTeam" type="radio"> Create New Team <br>
+                
+
+                <input id="team" class="oldTeam" name="team" value="oldTeam" type="radio"> Pick Team
+                <select class="teams">
+                    
+                </select>
+                
+                
+            </div>
+            <div class="waiver">
+                
+            </div>
+            <div class="options">
+                <input type="radio" class="agree">I agree
+                <input type="radio" class="disagree">I disagree
+            </div>
+            <div class="submitContain"><input class="submit" type="submit" placeholder="Submit"></div>
+        </form>
+    </body>
+</html>
