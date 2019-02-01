@@ -8,38 +8,43 @@
     </head>
     <body>
         <form>
-            <input id="info" class="email" type="text" placeholder="Email">
-            <input id="info" class="screenname" type="text" placeholder="Screenname" required>
-            <input id="info" class="normieFirstName" type="text" placeholder="First Name">
-            <input id="info" class="normieLastName" type="text" placeholder="Last Name">
-            
-            <div class="teamSelect">
-                <p>Please pick one...</P>
-                
-                    <img>
-                    <input id="team" class="noTeam" name="team" value="" type="hidden"> Free Agent (We will assign you a team if possible)<br>
-
-                    <img>
-                    <input id="team" class="newTeam" name="team" value="" type="hidden"> Create New Team <br>
+            <div class="grid-contain">
+                <div>
+                    <input id="info" class="email" type="text" placeholder="Email">
+                    <input id="info" class="normieFirstName" type="text" placeholder="First Name">
+                </div>
+                <div>
+                    <input id="info" class="screenname" type="text" placeholder="Screenname" required>
+                    <input id="info" class="normieLastName" type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="gridContain">
+                <div class="teamSelect">
+                    <p>Please pick one...</P>
                     
                     <img>
-                    <input id="team" class="oldTeam" name="team" value="oldTeam" type="hidden"> Pick Team
+                    <input id="team" class="noTeam" name="team" value=""type="hidden"> Free Agent (We will assign you a team ifpossible)<br>
+
+                    <img>
+                    <input id="team" class="newTeam" name="team" value=""type="hidden"> Create New Team <br>
+                        
+                    <img>
+                    <input id="team" class="oldTeam" name="team"value="oldTeam" type="hidden"> Pick Team
                     <select class="teams">
                     
-                </select>
-                
-            </div>
-            
-            <div class="stuff">
-                <div id="add">
-                    <input class="newTeamName" type="text" placeholder="Enter Team">
+                    </select>
+                    
                 </div>
+                <div class="stuff">
+                    <div id="add">
+                        <input class="newTeamName" type="text" placeholder="Enter Team">
+                    </div>
 
-                <div id="current">
-                    1212121212
+                    <div id="current">
+                        1212121212
+                    </div>
                 </div>
             </div>
-
             <div class="waiver">
                 
             </div>
