@@ -28,10 +28,28 @@ form #info {
     display: none;
 }
 #team {
-    margin-bottom: 1%;
+    margin-bottom: 15px;
 }
 .teamSelect {
     margin: 1%;
+    float: left;
+}
+.stuff {
+    margin: 1%;
+    float: right;
+    width: 50%;
+}
+#add{
+    display: ;
+}
+.newTeamName{
+    width: 90%;
+    padding: 2%;
+}
+
+#current {
+    margin: 1%;
+    display: none;
 }
 
 .waiver {

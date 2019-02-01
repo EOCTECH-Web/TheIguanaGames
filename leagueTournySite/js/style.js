@@ -1,8 +1,17 @@
- var pw1 = document.getElementsByClassName("pw1").value
- var pw2 = document.getElementsByClassName("pw2").value
+$(document).ready(function() {
+    
+    $(".noTeam").click(function() {
+        $("#add").css("display", "none")
+        $("#current").css("display", "none")
+    });
 
-$("checkPw").click(function() {
-    if (pw1 != pw2) {
-        alert("Passwords entered must match.")
-    }
-})
+    $(".newTeam").click(function() {
+        $("#add").css("display", "block")
+        $("#current").css("display", "none")
+    });
+
+    $(".oldTeam").active(function() {
+        $("#add").css("display", "none")
+        $("#current").css("display", "block")
+    });
+});
