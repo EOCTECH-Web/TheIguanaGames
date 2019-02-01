@@ -10,7 +10,7 @@ form {
 form #info {
     width: 45%;
     padding: 1%;
-    margin: 1%;
+
 }
 
 .checkPw {
@@ -34,10 +34,10 @@ form #info {
     margin: 1%;
     float: left;
 }
-.stuff {
+.gridContain {
     margin: 1%;
-    float: right;
-    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 #add{
     display: ;
