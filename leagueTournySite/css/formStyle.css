@@ -28,30 +28,37 @@ form #info {
 .lastName {
     float: right;
 }
-
+.teamSelect {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+.teamSelect .left, .middle, .right {
+    margin: auto;
+    text-align: center;
+}
 .teamSelect img {
     width: 85px;
     height: 85px;
+    border: 2px solid black;
 }
+.teamSelect img:hover {
+    cursor: pointer;
+}
+
 
 
 #team {
     margin-bottom: 1%;
-}
-.teamSelect {
-    margin: 1%;
-    margin-top: 0%;
-    float: left;
 }
 #add {
     display: none;
 }
 .newTeamName {
     width: 45%;
-    margin: 1%;
-    margin-top: 1%;
+    margin: auto;
+    
     padding: 1%;
-    float: right;
 }
 
 
