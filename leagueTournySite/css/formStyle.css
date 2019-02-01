@@ -29,7 +29,7 @@ form #info {
     float: right;
 }
 
-.free {
+.teamSelect img {
     width: 85px;
     height: 85px;
 }
@@ -66,6 +66,16 @@ form #info {
     padding: 1%;
     float: right;
 }
+
+.agree {
+    width: 30px;
+    height: 30px;
+}
+.disagree {
+    width: 30px;
+    height: 30px;
+}
+
 
 .waiver {
     background-color: #ffffff;
