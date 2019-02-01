@@ -1,0 +1,29 @@
+body{
+    height:100%; 
+    background-color: #e0ecf8ff;
+    margin: 0px;
+    padding: none;
+}
+.parallax{
+    background-color: #004f67ff;
+    height: 800px;
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    margin-bottom: 150px;
+    padding: 0;
+}
+#video{
+    height: 100%;
+    width: 100%;
+}
+.section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: none;
+    overflow: hidden;
+}
+.section video{
+    border: 5px solid red;
+}
