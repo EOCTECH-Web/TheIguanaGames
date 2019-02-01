@@ -1,4 +1,8 @@
 
+body {
+    background-color: #e0ecf8ff;
+}
+
 form {
     width: 50%;
     margin: auto;
@@ -31,16 +35,18 @@ form #info {
 }
 
 .waiver {
+    background-color: #ffffff;
+    border: 5px solid ;
     width: 98%;
-    background-color: black;
     height: 300px;
     margin: 1%;
+    word-wrap: break-word;
+    overflow-y: scroll;
 }
 .options {
     margin: 1%;
 }
 .submit {
-    display: none;
     width: 47%;
     padding: 1%;
 }
