@@ -1,3 +1,7 @@
+* {
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+}
 
 body {
     background-color: #e0ecf8ff;
@@ -10,47 +14,68 @@ form {
 form #info {
     width: 45%;
     padding: 1%;
-
-}
-
-.checkPw {
-    width: 47%;
-    padding: 1%;
     margin: 1%;
 }
-.checkPwContain {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+.email {
+    float: left;
+}
+.screenname {
+    float: right;
+}
+.firstName {
+    float: left;
+}
+.lastName {
+    float: right;
 }
 
-.teams {
-    display: none;
+.teamSelect img {
+    width: 85px;
+    height: 85px;
 }
+
+
 #team {
-    margin-bottom: 15px;
+    margin-bottom: 1%;
 }
 .teamSelect {
     margin: 1%;
+    margin-top: 0%;
     float: left;
 }
-.gridContain {
-    margin: 1%;
-    display: grid;
-    grid-template-columns: auto auto;
-}
-#add{
-    display: ;
-}
-.newTeamName{
-    width: 90%;
-    padding: 2%;
-}
-
-#current {
-    margin: 1%;
+#add {
     display: none;
 }
+.newTeamName {
+    width: 45%;
+    margin: 1%;
+    margin-top: 1%;
+    padding: 1%;
+    float: right;
+}
+
+
+#current {
+    display: none;
+}
+.teams {
+    margin: 1%;
+    width: 47.2%;
+    margin: 1%;
+    margin-top: 1%;
+    padding: 1%;
+    float: right;
+}
+
+.agree {
+    width: 30px;
+    height: 30px;
+}
+.disagree {
+    width: 30px;
+    height: 30px;
+}
+
 
 .waiver {
     background-color: #ffffff;

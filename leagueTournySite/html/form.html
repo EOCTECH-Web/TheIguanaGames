@@ -2,47 +2,46 @@
 <html>
     <head>
         <title>Form - TheIguanaGames</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="../css/formStyle.css">
         <script src="../js/jquery-3.3.1.min.js"></script>
         <script src="../js/style.js"></script>
     </head>
     <body>
         <form>
-            <div class="grid-contain">
-                <div>
-                    <input id="info" class="email" type="text" placeholder="Email">
-                    <input id="info" class="normieFirstName" type="text" placeholder="First Name">
-                </div>
-                <div>
-                    <input id="info" class="screenname" type="text" placeholder="Screenname" required>
-                    <input id="info" class="normieLastName" type="text" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="gridContain">
-                <div class="teamSelect">
-                    <p>Please pick one...</P>
+            
+                
+            <input id="info" class="email" type="text" placeholder="Email">
+            <input id="info" class="screenname" type="text" placeholder="Screenname" required>
+                
+            
+            <input id="info" class="firstName" type="text" placeholder="First Name">
+            <input id="info" class="lastName" type="text" placeholder="Last Name">
+            
+            
+            <div class="teamSelect">
+                <p>Please pick one...</P>
                     
-                    <img>
-                    <input id="team" class="noTeam" name="team" value=""type="hidden"> Free Agent (We will assign you a team ifpossible)<br>
+                <img src="../M">
+                <input id="team" class="noTeam" name="team" value=""type="hidden"> Free Agent (We will assign you a team if possible)<br>
 
-                    <img>
-                    <input id="team" class="newTeam" name="team" value=""type="hidden"> Create New Team <br>
+                <img>
+                <input id="team" class="newTeam" name="team" value=""type="hidden"> Create New Team <br>
                         
-                    <img>
-                    <input id="team" class="oldTeam" name="team"value="oldTeam" type="hidden"> Pick Team
-                    <select class="teams">
-                    
-                    </select>
-                    
+                <img src="../media/RightPoro-01.png">
+                <input id="team" class="oldTeam" name="team"value="oldTeam" type="hidden"> Pick Team
+                
+            </div>
+            <div class="hiddenInputs">
+                <div id="add">
+                    <input class="newTeamName" type="text" placeholder="Enter Team">
                 </div>
-                <div class="stuff">
-                    <div id="add">
-                        <input class="newTeamName" type="text" placeholder="Enter Team">
-                    </div>
 
-                    <div id="current">
-                        1212121212
-                    </div>
+                <div id="current">
+                    <select class="teams">
+                        <option value="none">Please pick your team...</option>
+                        
+                    </select>
                 </div>
             </div>
             <div class="waiver">
@@ -50,8 +49,8 @@
             </div>
             <div class="options">
                 <div class="cost">By agreeing you agree to the waiver and to pay the $15.</div>
-                <input type="radio" class="agree" name="agreement">I agree
-                <input type="radio" class="disagree" name="agreement" checked>I disagree
+                <input type="checkbox" class="agree" name="agreement">I agree
+                <input type="checkbox" class="disagree" name="agreement" checked>I disagree
             </div>
             <div class="submitContain"><input class="submit" type="submit" placeholder="Submit" href></div>
         </form>
