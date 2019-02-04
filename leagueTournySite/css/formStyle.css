@@ -38,7 +38,7 @@ form #info {
     text-align: center;
 }
 .teamSelect img {
-    width: 85px;
+    width: 95px;
     height: 85px;
     border: 2px solid black;
 }
@@ -46,6 +46,9 @@ form #info {
     cursor: pointer;
 }
 
+.left, .middle, .right {
+    cursor: pointer;
+}
 
 form p {
     margin: 1%;
@@ -72,7 +75,6 @@ form p {
     margin: 1%;
     margin-top: 1%;
     padding: 1%;
-    text-align: center;
 }
 
 
@@ -82,7 +84,7 @@ form p {
     margin-bottom: none;
 }
 .teams {
-    width: 45%;
+    width: 47.5%;
     margin: 1%;
     margin-top: 1%;
     margin-bottom: none;
@@ -124,3 +126,7 @@ form p {
 .submitContain {
     text-align: center;
 }
+
+
+/* This is where the media queries are for the mobile version */
+
