@@ -47,16 +47,26 @@ form #info {
 }
 
 
-
+form p {
+    margin: 1%;
+}
 #team {
     margin-bottom: 1%;
 }
+
+.placeholder {
+    width: 45%;
+    margin: 1%;
+    margin-top: 1%;
+    padding: 1%;
+}
+
 #add {
     text-align: center;
     display: none;
+    margin-bottom: none;
 }
 .newTeamName {
-    margin: 1%;
     width: 45%;
     margin: 1%;
     margin-top: 1%;
@@ -68,12 +78,13 @@ form #info {
 #current {
     text-align: center;
     display: none;
+    margin-bottom: none;
 }
 .teams {
-    margin: 1%;
     width: 45%;
     margin: 1%;
     margin-top: 1%;
+    margin-bottom: none;
     padding: 1%;
 }
 
@@ -90,11 +101,13 @@ form #info {
 .waiver {
     background-color: #ffffff;
     border: 5px solid ;
-    width: 98%;
+    width: 96%;
     height: 300px;
     margin: 1%;
+    margin-top: 100px;
     word-wrap: break-word;
     overflow-y: scroll;
+    position: relative
 }
 .options {
     margin: 1%;
@@ -102,6 +115,10 @@ form #info {
 .submit {
     width: 47%;
     padding: 1%;
+    display: none;
+}
+.submit:hover {
+    cursor: pointer;
 }
 .submitContain {
     text-align: center;
