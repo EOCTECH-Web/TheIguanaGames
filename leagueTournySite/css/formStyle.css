@@ -52,26 +52,29 @@ form #info {
     margin-bottom: 1%;
 }
 #add {
+    text-align: center;
     display: none;
 }
 .newTeamName {
+    margin: 1%;
     width: 45%;
-    margin: auto;
-    
+    margin: 1%;
+    margin-top: 1%;
     padding: 1%;
+    text-align: center;
 }
 
 
 #current {
+    text-align: center;
     display: none;
 }
 .teams {
     margin: 1%;
-    width: 47.2%;
+    width: 45%;
     margin: 1%;
     margin-top: 1%;
     padding: 1%;
-    float: right;
 }
 
 .agree {
