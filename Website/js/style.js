@@ -1,19 +1,19 @@
 $(document).ready(function() {
     
     $(".left").click(function() {
-        $(".placeholder").css("display", "block")
+        $("#placeholder").css("display", "block")
         $("#add").css("display", "none")
         $("#current").css("display", "none")
     });
 
     $(".middle").click(function() {
-        $(".placeholder").css("display", "none")
+        $("#placeholder").css("display", "none")
         $("#add").css("display", "block")
         $("#current").css("display", "none")
     });
 
     $(".right").click(function() {
-        $(".placeholder").hide()
+        $("#placeholder").hide()
         $("#add").css("display", "none")
         $("#current").css("display", "block")
     });
