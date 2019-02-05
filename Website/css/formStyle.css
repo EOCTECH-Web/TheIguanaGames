@@ -1,0 +1,144 @@
+* {
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #e0ecf8ff;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+form #info {
+    width: 45%;
+    padding: 1%;
+    margin: 1%;
+}
+form input {
+    border: .1em solid black
+}
+.email {
+    float: left;
+}
+.screenname {
+    float: right;
+}
+.firstName {
+    float: left;
+}
+.lastName {
+    float: right;
+}
+.teamSelect {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+.teamSelect .left, .middle, .right {
+    margin: auto;
+    text-align: center;
+}
+.teamSelect img {
+    width: 95px;
+    height: 95px;
+    
+}
+.teamSelect img:hover {
+    cursor: pointer;
+}
+.left, .middle, .right {
+    cursor: pointer;
+}
+.new {
+    min-width: 105px;
+    max-width: 105px;
+}
+
+form p {
+    margin: 1%;
+}
+#team {
+    margin-bottom: 1%;
+}
+
+#placeholder {
+    text-align: center;
+}
+.freeMainPos {
+    width: 94%;
+    height: 37.5px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.freeSubPos {
+    width: 94%;
+    height: 37.5px;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+#add {
+    text-align: center;
+    display: none;
+    height: 167px;
+}
+.newTeamName {
+    width: 94%;
+    height: 37.5px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+
+#current {
+    text-align: center;
+    display: none;
+    height: 167px;
+}
+.teams {
+    width: 97%;
+    height: 57px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.agree {
+    width: 30px;
+    height: 30px;
+}
+.disagree {
+    width: 30px;
+    height: 30px;
+}
+
+
+.waiver {
+    background-color: #ffffff;
+    border: 5px solid ;
+    width: 96%;
+    height: 300px;
+    margin: 1%;
+    margin-top: 3%;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    position: relative
+}
+.options {
+    margin: 1%;
+}
+.submit {
+    width: 47%;
+    padding: 1%;
+    display: none;
+}
+.submit:hover {
+    cursor: pointer;
+}
+.submitContain {
+    text-align: center;
+}
