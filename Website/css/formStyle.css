@@ -93,13 +93,13 @@ form p {
     padding: 1%;
 }
 
-
 #current {
     text-align: center;
     display: none;
     height: 167px;
 }
 .teams {
+    border: 2px solid black;
     width: 97%;
     height: 57px;
     margin-top: 3%;
@@ -115,7 +115,6 @@ form p {
     width: 30px;
     height: 30px;
 }
-
 
 .waiver {
     background-color: #ffffff;
