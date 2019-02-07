@@ -4,6 +4,7 @@ $(document).ready(function() {
         $("#placeholder").css("display", "block")
         $("#add").css("display", "none")
         $("#current").css("display", "none")
+        $(".left").css("")
     });
 
     $(".middle").click(function() {
@@ -34,4 +35,5 @@ $(document).ready(function() {
             $(".submit").hide();
         }
     });
+    
 });

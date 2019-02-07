@@ -4,12 +4,14 @@
 }
 
 body {
-    background-color: #e0ecf8ff;
+    background-color: #004f67ff;
 }
 
 form {
+    height: 100%;
     width: 50%;
     margin: auto;
+    background-color: #e0ecf8ff;
 }
 form #info {
     width: 45%;
@@ -31,6 +33,23 @@ form input {
 .lastName {
     float: right;
 }
+
+.clickables {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    text-align: center;
+    margin: 1%;
+}
+
+/* This is the league form area */
+
+.leagueClick {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
 .teamSelect {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -106,6 +125,8 @@ form p {
     margin-bottom: 1%;
     padding: 1%;
 }
+
+/* Waiver area */
 
 .agree {
     width: 30px;
