@@ -9,14 +9,29 @@
     </head>
     <body>
         <form>
+            <div class="inputsContain">
+                <div class="emailContain">
+                    <p>Email</p>
+                    <input id="info" class="email" type="text" required><br>
+                </div>
+                <div class="ignContain">
+                    <p>In Game Name</p>
+                    <input id="info" class="screenname" type="text" required><br>
+                </div> 
+                <div class="firstContain">   
+                    <p class="">First Name</p>
+                    <input id="info" class="firstName" type="text" required><br>
+                </div>
+                <div class="lastContain">
+                    <p>Last Name</p>
+                    <input id="info" class="lastName" type="text" required><br>
+                </div>    
+            </div>
+            <div class="clickables">
+                <img class="leagueClick">
+                <img class="smashClick">
+            </div>
             
-                
-            <input id="info" class="email" type="text" placeholder="Email">
-            <input id="info" class="screenname" type="text" placeholder="Screenname" required>
-                
-            
-            <input id="info" class="firstName" type="text" placeholder="First Name">
-            <input id="info" class="lastName" type="text" placeholder="Last Name">
             <div class="league">
                 <p>Choose your Poro...</P>
                 <div class="teamSelect">
@@ -36,8 +51,22 @@
                 </div>
                 <div class="hiddenInputs">
                     <div id="placeholder">
-                        <input type="text" class="freeMainPos" placeholder="Main Position">
-                        <input type="text" class="freeSubPos" placeholder="Secondary Position">
+                            <p>Main Position</p>
+                        <div class="mainPos">
+                            <button type="button" value="0" class="topMain">Top</button>
+                            <button type="button" value="0" class="jungleMain">Jungle</button>
+                            <button type="button" value="0" class="midMain">Mid</button>
+                            <button type="button" value="0" class="adcMain">ADC</button>
+                            <button type="button" value="0" class="supportMain">Support</button> 
+                        </div>
+                        <p>Secondary Position</p>
+                        <div class="subPos">
+                            <button type="button" value="0" class="topSub">Top</button>
+                            <button type="button" value="0" class="jungleSub">Jungle</button>
+                            <button type="button" value="0" class="midSub">Mid</button>
+                            <button type="button" value="0" class="adcSub">ADC</button>
+                            <button type="button" value="0" class="supportSub">Support</button> 
+                        </div> 
                     </div>
 
                     <div id="add">
