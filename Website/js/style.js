@@ -18,7 +18,42 @@ $(document).ready(function() {
         $("#add").css("display", "none")
         $("#current").css("display", "block")
     });
-
+    // mark the main position as the selected one
+    $(".topMain").click(function() {
+        $(".topMain").css("background-color", "#da6134")
+        $(".jungleMain").css("background-color", "")
+        $(".midMain").css("background-color", "")
+        $(".adcMain").css("background-color", "")
+        $(".supportMain").css("background-color", "")
+    });
+    $(".jungleMain").click(function() {
+        $(".topMain").css("background-color", "")
+        $(".jungleMain").css("background-color", "#da6134")
+        $(".midMain").css("background-color", "")
+        $(".adcMain").css("background-color", "")
+        $(".supportMain").css("background-color", "")
+    });
+    $(".midMain").click(function() {
+        $(".topMain").css("background-color", "")
+        $(".jungleMain").css("background-color", "")
+        $(".midMain").css("background-color", "#da6134")
+        $(".adcMain").css("background-color", "")
+        $(".supportMain").css("background-color", "")
+    });
+    $(".adcMain").click(function() {
+        $(".topMain").css("background-color", "")
+        $(".jungleMain").css("background-color", "")
+        $(".midMain").css("background-color", "")
+        $(".adcMain").css("background-color", "#da6134")
+        $(".supportMain").css("background-color", "")
+    });
+    $(".supportMain").click(function() {
+        $(".topMain").css("background-color", "")
+        $(".jungleMain").css("background-color", "")
+        $(".midMain").css("background-color", "")
+        $(".adcMain").css("background-color", "")
+        $(".supportMain").css("background-color", "#da6134")
+    });
 
     // check to see if user agrees to liability waiver or not
     $(".agree").click(function() {
@@ -26,6 +61,7 @@ $(document).ready(function() {
         if (checked) {
             $(".disagree").prop('checked', false);
             $(".submit").show();
+            $("form").css("padding-bottom", "1%")
         }
     });
     $(".disagree").click(function() {
@@ -33,6 +69,7 @@ $(document).ready(function() {
         if (checked) {
             $(".agree").prop('checked', false);
             $(".submit").hide();
+            $("form").css("padding-bottom", "3.5%")
         }
     });
     
