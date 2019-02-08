@@ -150,13 +150,15 @@ form h2 {
     margin-bottom: 0px;
     font-weight: 100;
     letter-spacing: 0.2ch;
+    color: #EDC164;
 }
 form .topInputs {
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 4%;
     background-color: #a1d7da;
     font-size: 20px;
+    border: 0;
 }
 form .topInputs:active {
     filter: brightness(.9)
@@ -198,6 +200,33 @@ form .mainInputs {
 .groupChoices button:hover {
     transform: scale(1.3);
     cursor: pointer;
+}
+
+/* ttracy */
+.register {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    color: #EDC164;
+    line-height: 30px;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.game_choice {
+    background-color: #A1D7DA;
+    position: relative;
+    top: -15px;
+    height: 55px;
+    color: #004F67;
+}
+.differentFormsButtons h2 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+button {
+    border: 1px solid #EDC164;
+    box-sizing: border-box;
 }
 
 /* Free agent hidden inputs */
@@ -251,6 +280,7 @@ form .mainInputs {
     font-size: 20px;
     color: #004f67ff;
     line-height: 30px;
+    letter-spacing: 2px;
 }
 .rightColumn h1{
     color: #004f67ff;

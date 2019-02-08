@@ -218,5 +218,26 @@ $(document).ready(function() {
             $("form").css("padding-bottom", "3.5%")
         }
     });
+
+
+
+
+
+    // Added This (ttracy)
+    $(".leagueForm").hide();
+    $("#freeHidden").hide();
+
+    $(".game_choice").change(function() {
+        
+        let value = $(".game_choice").val();
+        if (value == "league") {
+            $(".leagueForm").slideToggle();
+        }
+
+    });
+
+    $(".free").click(function() {
+        $("#freeHidden").slideToggle();
+    });
     
 });
