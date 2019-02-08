@@ -16,3 +16,20 @@ form {
     padding: 2%;
     padding-bottom: 3.5%;
 }
+
+.differentForms {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+}
+.logo {
+    margin: auto;
+    width: 50%;
+    height: 140px;
+}
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    border: 2px solid #004f67ff;
+}
+
