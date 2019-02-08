@@ -14,7 +14,9 @@ a1d7da new! light blue*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Anton', sans-serif;
 }
-
+video {
+    height: 100px;
+}
 body{
     height:100%; 
     background-color: #e0ecf8ff;
@@ -33,14 +35,20 @@ body{
     width: 50%;
 }
 #video{
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    height: 100%;
 }
 .section{
     width: 100%;
     height: 100vh;
     margin: 0px;
     padding: none;
+    background-size: cover;
 }
 .section video {
     object-fit: fill;
@@ -52,10 +60,12 @@ body{
     z-index: -100;
 }
 .section_top {
-    position: relative;
-    top: -100vh;
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100vh;
     text-align: center;
+    box-sizing: border-box;
 }
 .section_top .logo {
     max-width: 30%;
@@ -82,7 +92,6 @@ body{
     font-size: 2.0em;
     color: #fff; 
     letter-spacing: 5px;
-    margin-bottom: 8%;
 }
 #bottomParallax{
     margin-bottom: 0px;
@@ -93,27 +102,41 @@ body{
     padding-top: 150px;
     font-size: 300px; 
 }
-
+.darkdiv {
+    height: 75px;
+    background-color: black;
+    z-index: -100;
+    filter: opacity(30%);
+}
+.scrollText {
+    height: 75px;
+    margin-top: -75px;
+    padding-top: 20px;
+    z-index: 99;
+    box-sizing: border-box;
+}
 #signUp{
     margin: 0px;
     font-size: .8em;
     z-index: 1;
     color: #FFF;
-    margin-top: -6% 
+    /*margin-top: -6% */
 }
-.SomeStuffIDK{
+/*.SomeStuffIDK{
     background-color: #000;
     filter: opacity(30%);
     width: 100%;
     height: 8%;
     position: absolute;
     margin-top: -6.5%;
-}
+}*/
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px;
-    margin-top: -48.6%;
+    margin-top: 1px;
+    z-index: 200;
+    /*margin-top: -48.6%;*/
 }
 
 /* This is the left column of the grid */
