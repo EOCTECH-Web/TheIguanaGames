@@ -4,19 +4,25 @@ $(document).ready(function() {
         $("#placeholder").css("display", "block")
         $("#add").css("display", "none")
         $("#current").css("display", "none")
-        $(".left").css("")
+        $(".free").css("background-color", "#da6134")
     });
 
     $(".old").click(function() {
         $("#placeholder").css("display", "none")
         $("#current").css("display", "block")
         $("#add").css("display", "none")
+        $(".free").css("background-color", "")
+        $(".free").css("background-color", "")
+        $(".free").css("background-color", "")
     });
 
     $(".add").click(function() {
         $("#placeholder").hide()
         $("#current").css("display", "none")
         $("#add").css("display", "block")
+        $(".free").css("background-color", "")
+        $(".free").css("background-color", "")
+        $(".free").css("background-color", "")
     });
     
     // mark the main position as the selected one || The value will be changed to one to signify the selection of that option
@@ -111,8 +117,8 @@ $(document).ready(function() {
 
     $(".topSub").click(function() {
         $(".topSub").css("background-color", "#004f67ff")
-        $(".topMain").val(1)
-        $(".topMain").css("color", "white")
+        $(".topSub").val(1)
+        $(".topSub").css("color", "white")
         $(".jungleSub").css("background-color", "")
         $(".jungleSub").val(0)
         $(".jungleSub").css("color", "black")

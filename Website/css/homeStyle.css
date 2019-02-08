@@ -176,19 +176,12 @@ form .mainInputs {
 }
 
 
-.differentFormsButtons {
-    display: grid;
-    grid-template-columns: auto auto; 
-}
-.games {
-    width: 60%;
-    height: 110px;
-    margin: auto;
-    padding: 3%; 
-}
-.games:hover {
-    transform: scale(1.3);
-    cursor: pointer;
+.differentFormsButtons select{
+    width: 100%;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
 }
 
 .groupChoices {
@@ -201,6 +194,10 @@ form .mainInputs {
     font-size: 20px;
     width: 100%;
     height: 50px;
+}
+.groupChoices button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
 /* Free agent hidden inputs */
