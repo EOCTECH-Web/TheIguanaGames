@@ -102,15 +102,9 @@ body{
     padding-top: 150px;
     font-size: 300px; 
 }
-.darkdiv {
-    height: 75px;
-    background-color: black;
-    z-index: -100;
-    filter: opacity(30%);
-}
+
 .scrollText {
     height: 75px;
-    margin-top: -75px;
     padding-top: 20px;
     z-index: 99;
     box-sizing: border-box;
@@ -134,7 +128,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px;
-    margin-top: 1px;
+    margin-top: 0px;
     z-index: 200;
     /*margin-top: -48.6%;*/
 }
