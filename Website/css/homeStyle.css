@@ -82,6 +82,7 @@ body{
     font-size: 2.0em;
     color: #fff; 
     letter-spacing: 5px;
+    margin-bottom: 8%;
 }
 #bottomParallax{
     margin-bottom: 0px;
@@ -92,31 +93,38 @@ body{
     padding-top: 150px;
     font-size: 300px; 
 }
+
 #signUp{
     margin: 0px;
-    margin-top: 80px;
     font-size: .8em;
     z-index: 1;
     color: #FFF;
+    margin-top: -6% 
 }
 .SomeStuffIDK{
     background-color: #000;
     filter: opacity(30%);
     width: 100%;
-    height: 70px;
+    height: 8%;
     position: absolute;
-    margin-top: 33px;
+    margin-top: -6.5%;
 }
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px;
-    margin-top: -969px;
+    margin-top: -48.6%;
 }
+
+/* This is the left column of the grid */
+
 .leftColumn{
     width: 100%;
     background-color: #004f67ff;
 }
+
+/* This is the right column of the grid */
+
 .rightColumn{
     width: 100%;
     background-color: #a1d7da;
