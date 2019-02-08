@@ -14,7 +14,9 @@ a1d7da new! light blue*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Anton', sans-serif;
 }
-
+video {
+    height: 100px;
+}
 body{
     height:100%; 
     background-color: #e0ecf8ff;
@@ -23,32 +25,47 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .parallax{
-    background-color: #a1d7da;
+    background-color: #004f67ff;
     height: 800px;
     background-attachment: absolute;
     background-repeat: no-repeat;
-    margin-bottom: 150px;
+    margin-bottom: 880px;
+    margin-top: -987px;
     padding: 0;
+    width: 50%;
 }
 #video{
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    height: 100%;
 }
 .section{
     width: 100%;
     height: 100vh;
     margin: 0px;
     padding: none;
+    background-size: cover;
 }
 .section video {
     object-fit: fill;
-    filter: opacity(60%);
+    filter: opacity(70%);
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
 }
 .section_top {
-    position: relative;
-    top: -100vh;
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100vh;
     text-align: center;
+    box-sizing: border-box;
 }
 .section_top .logo {
     max-width: 30%;
@@ -75,4 +92,177 @@ body{
     font-size: 2.0em;
     color: #fff; 
     letter-spacing: 5px;
+}
+#bottomParallax{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.parallax h1{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 300px; 
+}
+
+.scrollText {
+    height: 75px;
+    padding-top: 0px;
+    z-index: 99;
+    box-sizing: border-box;
+}
+#signUp{
+    margin: 0px;
+    font-size: .8em;
+    z-index: 1;
+    color: #FFF;
+    /*margin-top: -6% */
+}
+/*.SomeStuffIDK{
+    background-color: #000;
+    filter: opacity(30%);
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    margin-top: -6.5%;
+}*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin-top: 0px;
+    z-index: 200;
+    /*margin-top: -48.6%;*/
+}
+
+/* This is the left column of the grid */
+
+.leftColumn{
+    width: 100%;
+    background-color: #004f67ff;
+    color: #a1d7da;
+}
+
+form {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+form h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    letter-spacing: 0.2ch;
+}
+form .topInputs {
+    width: 100%;
+    margin: auto;
+    padding: 4%;
+    background-color: #a1d7da;
+    font-size: 20px;
+}
+form .topInputs:active {
+    filter: brightness(.9)
+}
+::placeholder {
+    color: #004f67ff;
+}
+.lastContain, .ignContain {
+    margin-left:  5%;
+}
+.emailContain, .firstContain {
+    margin-right:  5%;
+}
+form .mainInputs {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.differentFormsButtons {
+    display: grid;
+    grid-template-columns: auto auto; 
+}
+.games {
+    width: 60%;
+    height: 110px;
+    margin: auto;
+    padding: 3%; 
+}
+.games:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.groupChoices {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    width: 100%;
+}
+.groupChoices button {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+/* Free agent hidden inputs */
+
+.mainPos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    margin: auto;
+}
+.mainPos button {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 1%;
+}
+.mainPos button:hover {
+    background-color: #004f67ff;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.subPos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    margin: auto;
+}
+.subPos button {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 1%;
+}
+.subPos button:hover {
+    background-color: #004f67ff;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* This is the right column of the grid */
+
+.rightColumn{
+    width: 100%;
+    background-color: #a1d7da;
+    padding-bottom: 42px;
+}
+.about{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    color: #004f67ff;
+    line-height: 30px;
+}
+.rightColumn h1{
+    color: #004f67ff;
+    font-size: 50px;
+}
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
 }

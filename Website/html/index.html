@@ -3,11 +3,13 @@
     <head>
             <title>TheIguanaGames</title>
             <link type="text/css" rel="stylesheet" href="../css/homeStyle.css">
+            <script src="../js/jquery-3.3.1.min.js"></script>
+            <script src="../js/style.js"></script>
     </head>
     <body>
-        <div class="parallax section">  
+        <div class="section">  
             <video autoplay loop muted id="video" poster="">
-                <source src = "../Media/awaken.mp4" type="video/mp4">
+                <source src = "../Media/awaken.mp4" type="video/mp4" class="vidtest">
             </video> 
         </div>
         <div class="section_top">
@@ -15,15 +17,79 @@
             <h1>The Iguana Games</h1>
             <h2>Eastern Oklahoma County Technology Center</h2>
             <h3>April 13, 2019</h3>
+            <div class="scrollText">
+                <div id="signUp">SCROLL DOWN TO REGISTER</div>
+                <img src="../Media/V-01.png" width="35">
+            </div>
         </div>
-<br />
-        <div class="parallax">   
+        <div class="grid">
+            <div class="leftColumn">
+                <form>
+                    <div class="mainInputs">
+                        <div class="firstContain">
+                            <h2>First </h2>
+                            <input class="first topInputs" type="text" placeholder="John"><br>
+                        </div>
+                        
+                        <div class="lastContain">
+                            <h2>Last</h2>
+                            <input class="last topInputs" type="text" placeholder="Smith"><br>
+                        </div>
+
+                        <div class="emailContain">
+                            <h2>Email</h2>
+                            <input class="email topInputs" type="email" placeholder="email@fake.com"><br>
+                        </div>
+
+                        <div class="ignContain">
+                            <h2>Screen Name</h2>
+                            <input class="ign topInputs" type="text" placeholder="WobbleFriend"><br>
+                        </div>
+                    </div>
+                    <div class="differentFormsButtons">
+                        <img class="leagueClick games" src="../Media/League_of_Legends_logo.png">
+                        <img class="smashClick games" src="../Media/Super_Smash_Bros._Ultimate_logo.png">
+                    </div>
+                    <div class="leagueForm">
+                        <div class="groupChoices">
+                            <button class="free" type="button">Free Agent</button>
+                            <button class="old" type="button">Choose your team</button>
+                            <button class="add" type="button">Add New Team</button>
+                        </div>
+                        <div id="freeHidden">
+                                <p>Main Position</p>
+                                <div class="mainPos">
+                                    <button type="button" value="0" class="topMain">Top</button>
+                                    <button type="button" value="0" class="jungleMain">Jungle</button>
+                                    <button type="button" value="0" class="midMain">Mid</button>
+                                    <button type="button" value="0" class="adcMain">ADC</button>
+                                    <button type="button" value="0" class="supportMain">Support</button> 
+                                </div>
+                                <p>Secondary Position</p>
+                                <div class="subPos">
+                                    <button type="button" value="0" class="topSub">Top</button>
+                                    <button type="button" value="0" class="jungleSub">Jungle</button>
+                                    <button type="button" value="0" class="midSub">Mid</button>
+                                    <button type="button" value="0" class="adcSub">ADC</button>
+                                    <button type="button" value="0" class="supportSub">Support</button> 
+                                </div> 
+                            </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="rightColumn">
+                <h1 class="about">About</h1>
+                    <p class="about">Eastern Oklahoma County Technology Center (EOCTC) continues to serve the communities of Eastern Oklahoma County just as it has for the past 34 years. Serving approximately 600 students a year, EOCTC continues to grow and expand to meet the needs of a growing community and developing business sector. EOCTC continues to embrace new and relevant technologies in order to train students for success in the workplace and increase course offerings to reflect the changing work environment.<br /><br />
+                    The Iguana Games event was created by students and teachers at EOCTC. As this fundraiser is benefiting the Web/3D design class, here is a brief overview of the program. Students enrolled in the Web design curriculum will have the opportunity to work with many industry leading programs and software such as Photoshop and Visual Studio Code to further their education into web development and design. As well as learning the fundamentals of programming, such as HTML, CSS, JavaScript, and PHP.<br /><br />
+                        3D Design students will be given the same opportunity to learn the industry leading software and skills. A few of these being Autodesk Maya, Inventor, AutoCAD, Unity, and Substance Painter. These students will also be provided with the skills to be able to program with languages such as C# and Java.<br /><br />
+                    During the course of the year the students in either Web or 3D Design will be given the option to compete for SkillsUSA. The Iguana Games proceeds will go towards helping send web and 3D design students to these contests. SkillsUSA has both a state and national competition. In previous years several students have had the opportunity to make it to Louisville, KY for the National SkillsUSA Conference. In 2018, a high school team from the Web/3D Design class placed 1st place in the nation for Interactive Applications and Game Development and 2nd place for the adult division. We are extremely proud of the accomplishments of our students. Your participation in the event will continue to help students achieve their goals.</p>                    
+            </div>
         </div>
-<br />
-        <div class="parallax">   
-        </div>
-<br />
-        <div class="parallax">   
+        <div class="footer">
+            <div>
+           &copy; 2019, Eastern Oklahoma County Technology Center
+            </div>
         </div>
     </body>
 </HTML>
