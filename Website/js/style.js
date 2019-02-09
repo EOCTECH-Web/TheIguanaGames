@@ -226,18 +226,37 @@ $(document).ready(function() {
     // Added This (ttracy)
     $(".leagueForm").hide();
     $("#freeHidden").hide();
+    $(".team_choice").hide();
+    $(".cont_newteam").hide();
 
     $(".game_choice").change(function() {
         
         let value = $(".game_choice").val();
         if (value == "league") {
-            $(".leagueForm").slideToggle();
+            $(".leagueForm").slideDown();
         }
 
     });
 
+    // when user clicks on "Free agent"
     $(".free").click(function() {
-        $("#freeHidden").slideToggle();
+        $("#freeHidden").slideDown();
+        $(".team_choice").slideUp();
+        $(".cont_newteam").slideUp();
+    });
+
+    // when user clicks on "Already Have a Team"
+    $(".old").click(function() {
+        $(".team_choice").slideDown();
+        $("#freeHidden").slideUp();
+        $(".cont_newteam").slideUp();
+    });
+
+    // when user clicks on "Add New Team"
+    $(".add").click(function() {
+        $(".cont_newteam").slideDown();
+        $("#freeHidden").slideUp();
+        $(".team_choice").slideUp();
     });
     
 });

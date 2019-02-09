@@ -220,12 +220,41 @@ form .mainInputs {
     height: 55px;
     color: #004F67;
 }
+.team_choice {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    padding: 1%;
+    margin-top: 28px;
+    width: 100%;
+}
+.newteam {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    width: 98%;
+    border: 0;
+    padding-left: 15px;
+}
+.lunch {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    width: 98%;
+    border: 0;
+    padding-left: 15px;
+    position: relative;
+    top: 10px;
+}
 .differentFormsButtons h2 {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 button {
-    border: 1px solid #EDC164;
+    border: 1px solid #A1D7DA;
     box-sizing: border-box;
 }
 
