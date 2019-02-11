@@ -1,82 +1,73 @@
 $(document).ready(function() {
     
+    $()
+
+    // This is the league drop down scripts
+
     $(".free").click(function() {
         $("#placeholder").css("display", "block")
         $("#add").css("display", "none")
         $("#current").css("display", "none")
-        $(".free").css("background-color", "#da6134")
+        $(".free").css("background-color", "#A1D7DA")
+        $(".old").css("background-color", "#fff")
+        $(".add").css("background-color", "#fff")
     });
 
     $(".old").click(function() {
         $("#placeholder").css("display", "none")
         $("#current").css("display", "block")
         $("#add").css("display", "none")
-        $(".free").css("background-color", "")
-        $(".free").css("background-color", "")
-        $(".free").css("background-color", "")
+        $(".free").css("background-color", "#fff")
+        $(".old").css("background-color", "#A1D7DA")
+        $(".add").css("background-color", "#fff")
     });
 
     $(".add").click(function() {
         $("#placeholder").hide()
         $("#current").css("display", "none")
         $("#add").css("display", "block")
-        $(".free").css("background-color", "")
-        $(".free").css("background-color", "")
-        $(".free").css("background-color", "")
+        $(".free").css("background-color", "#fff")
+        $(".old").css("background-color", "#fff")
+        $(".add").css("background-color", "#A1D7DA")
     });
-    
+
     // mark the main position as the selected one || The value will be changed to one to signify the selection of that option
     
     $(".topMain").click(function() {
-        $(".topMain").css("background-color", "#004f67ff")
+        $(".topMain").css("background-color", "#A1D7DA")
         $(".topMain").val(1)
-        $(".topMain").css("color", "white")
         $(".jungleMain").css("background-color", "")
         $(".jungleMain").val(0)
-        $(".jungleMain").css("color", "black")
         $(".midMain").css("background-color", "")
         $(".midMain").val(0)
-        $(".midMain").css("color", "black")
         $(".adcMain").css("background-color", "")
         $(".adcMain").val(0)
-        $(".adcMain").css("color", "black")
         $(".supportMain").css("background-color", "")
         $(".supportMain").val(0)
-        $(".supportMain").css("color", "black")
     });
     $(".jungleMain").click(function() {
         $(".topMain").css("background-color", "")
         $(".topMain").val(0)
-        $(".topMain").css("color", "black")
-        $(".jungleMain").css("background-color", "#004f67ff")
+        $(".jungleMain").css("background-color", "#A1D7DA")
         $(".jungleMain").val(1)
-        $(".jungleMain").css("color", "white")
         $(".midMain").css("background-color", "")
         $(".midMain").val(0)
-        $(".midMain").css("color", "black")
         $(".adcMain").css("background-color", "")
         $(".adcMain").val(0)
-        $(".adcMain").css("color", "black")
         $(".supportMain").css("background-color", "")
         $(".supportMain").val(0)
-        $(".supportMain").css("color", "black")
     });
     $(".midMain").click(function() {
         $(".topMain").css("background-color", "")
         $(".topMain").val(0)
-        $(".topMain").css("color", "black")
         $(".jungleMain").css("background-color", "")
         $(".jungleMain").val(0)
-        $(".jungleMain").css("color", "black")
         $(".midMain").css("background-color", "#004f67ff")
         $(".midMain").val(0)
-        $(".midMain").css("color", "white")
         $(".adcMain").css("background-color", "")
         $(".adcMain").val(0)
-        $(".adcMain").css("color", "black")
         $(".supportMain").css("background-color", "")
         $(".supportMain").val(0)
-        $(".supportMain").css("color", "black")
     });
     $(".adcMain").click(function() {
         $(".topMain").css("background-color", "")
@@ -230,12 +221,10 @@ $(document).ready(function() {
     $(".cont_newteam").hide();
 
     $(".game_choice").change(function() {
-        
         let value = $(".game_choice").val();
         if (value == "league") {
             $(".leagueForm").slideDown();
         }
-
     });
 
     // when user clicks on "Free agent"
