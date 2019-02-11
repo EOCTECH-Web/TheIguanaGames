@@ -1,7 +1,29 @@
 $(document).ready(function() {
     
-    $()
+    // This is the game selection drop down area
 
+    // Added This (ttracy)
+    $(".leagueForm").hide();
+    $("#freeHidden").hide();
+    $(".team_choice").hide();
+    $(".cont_newteam").hide();
+
+    $(".game_choice").change(function() {
+        let value = $(".game_choice").val();
+        if (value == "league") {
+            $(".leagueForm").slideDown();
+            $(".smashForm").slideUp();
+        }
+        if (value == "smash") {
+            $(".leagueForm").slideUp();
+            $(".smashForm").slideDown();
+        }
+        if (value == ""){
+            $(".leagueForm").slideUp();
+            $(".smashForm").slideUp();
+        }
+    });
+    
     // This is the league drop down scripts
 
     $(".free").click(function() {
@@ -206,23 +228,6 @@ $(document).ready(function() {
             $(".agree").prop('checked', false);
             $(".submit").hide();
             $("form").css("padding-bottom", "3.5%")
-        }
-    });
-
-
-
-
-
-    // Added This (ttracy)
-    $(".leagueForm").hide();
-    $("#freeHidden").hide();
-    $(".team_choice").hide();
-    $(".cont_newteam").hide();
-
-    $(".game_choice").change(function() {
-        let value = $(".game_choice").val();
-        if (value == "league") {
-            $(".leagueForm").slideDown();
         }
     });
 
