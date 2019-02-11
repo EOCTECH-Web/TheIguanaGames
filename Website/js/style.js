@@ -231,6 +231,33 @@ $(document).ready(function() {
         }
     });
 
+    // Waiver name fill in
+    let firstName;
+    let lastName;
+
+    $(".first").change(function () {
+        firstName = $(".first").val();
+        lastName = $(".last").val();
+    });
+    $(".last").change(function () {
+        firstName = $(".first").val();
+        lastName = $(".last").val();
+    });
+
+    $(".first").keyup(function() {
+        let signature = $(".first").val() + " " + $(".last").val();
+        $(".signing").text(signature);
+    });
+
+    $(".last").keyup(function() {
+        let signature = $(".first").val() + " " + $(".last").val();
+        $(".signing").text(signature);
+    });
+
+    // Cost incrementer
+
+    $("")
+
     // when user clicks on "Free agent"
     $(".free").click(function() {
         $("#freeHidden").slideDown();
