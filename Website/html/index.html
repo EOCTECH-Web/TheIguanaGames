@@ -28,23 +28,23 @@
                 <form>
                     <div class="mainInputs">
                         <div class="firstContain">
-                            <h2>First </h2>
-                            <input class="first topInputs" type="text" placeholder="First Name"><br>
+                            <h2>First*</h2>
+                            <input class="first topInputs" type="text" placeholder="First Name" value="" required><br>
                         </div>
                         
                         <div class="lastContain">
-                            <h2>Last</h2>
-                            <input class="last topInputs" type="text" placeholder="Last Name"><br>
+                            <h2>Last*</h2>
+                            <input class="last topInputs" type="text" placeholder="Last Name" value="" required><br>
                         </div>
 
                         <div class="emailContain">
-                            <h2>Email</h2>
-                            <input class="email topInputs" type="email" placeholder="Email Address"><br>
+                            <h2>Email*</h2>
+                            <input class="email topInputs" type="email" placeholder="Email Address" required><br>
                         </div>
 
                         <div class="ignContain">
-                            <h2>Screen Name</h2>
-                            <input class="ign topInputs" type="text" placeholder="Screen Name"><br>
+                            <h2>Screen Name*</h2>
+                            <input class="ign topInputs" type="text" placeholder="Screen Name" required><br>
                         </div>
                     </div>
                     <div class="differentFormsButtons">
@@ -91,6 +91,10 @@
                         </div>
 
                     </div>
+                    
+                    <div class="smashForm">
+
+                    </div>
 
                     <h2>Lunch</h2>
                     If you would prefer not having to leave the venue, please consider prepaying for lunch.<br />
@@ -106,16 +110,27 @@
                     <em><b>Serving:</b> Roast, Green Beans, Mashed Potatoes, and a Soda</em>
                     <select class="lunch">
                         <option value="">Would you like to prepay for dinner?</option>
-                        <option value="1">Yes [$7.00]</option>
-                        <option value="2">No [$0.00]</option>
+                        <option class="lunchYes" value="1">Yes [$7.00]</option>
+                        <option class="lunchNo" value="2">No [$0.00]</option>
                     </select>
+                    
+                    <!-- This is the last part of the form; waiver; total, pay now, and what cards are accepted -->
+                    <h2>Liability Waiver</h2>
+                    You must argee to the waiver to participate.
+                    <div class="waiver">
+                        I, <i class="signing">________________</i>, hereby acknowledge that I desire to participate in The Iguana Games, LAN Party, tournament at Eastern Oklahoma County Technology Center. I also acknowledge that my decision to participate in The Iguana Games event is totally voluntary and is solely for the purpose of my pursuit of recreational activities. I authorize the use of any photos (both digital and print), and videos for The Iguana Games future web / online use to promote further activities. I agree that I am fully aware of the risks and hazards inherent in entering the premises including but not limited to wire hazards, high voltage electrical wiring, narrow aisles, and other hazards and/or in participating in The Iguana Games. If I am using my own equipment, I acknowledge that Eastern Oklahoma County Technology Center nor The Iguana Games event is responsible for any damage to personal property. I hereby irrevocably and forever release, discharge, waive, and hold harmless Eastern Oklahoma County Technology Center from any and all claims, losses (includes property losses, stolen, or damaged), causes of action and liabilities of any kind arising out of or relating in any way to The Iguana Games event. I hereby acknowledge that I will conduct myself in an appropriate manner. I will be participating in an educational institution in which values respect and responsibility. Any inappropriate behavior, including but not limited to foul language, performing harmful acts, obscenity, or any otherwise objectionable conduct towards any person or property. I recognize and understand that hosts (including Travis Tracy) reserves the right to request dismissal from the event without penalty, repayment, or refunding in the event that behavior is deemed inappropriate. I also acknowledge that I am 18 years of age and/or have permission from legal guardians to participate in The Iguana Games. In the event that you are not at least in high school, it is expected that you have a legal guardian. This form is required to be filled out by someone who is of age and responsibility to sign this legal binding document. If you are in high school, it is expected that your legal guardians complete this form on your behalf.
+                    </div>
+                    <div class="submitAndTotal">
+                        <div class="total">$15.00</div>
+                        <input type="image" class="submit" src="../Media/register.png" alt="Submit">
+                    </div>
                 </form>
             </div>
             <div class="rightColumn">
                 <h1 class="about">About</h1>
                     <p class="about">Eastern Oklahoma County Technology Center (EOCTC) continues to serve the communities of Eastern Oklahoma County just as it has for the past 34 years. Serving approximately 600 students a year, EOCTC continues to grow and expand to meet the needs of a growing community and developing business sector. EOCTC continues to embrace new and relevant technologies in order to train students for success in the workplace and increase course offerings to reflect the changing work environment.<br /><br />
                     The Iguana Games event was created by students and teachers at EOCTC. As this fundraiser is benefiting the Web/3D design class, here is a brief overview of the program. Students enrolled in the Web design curriculum will have the opportunity to work with many industry leading programs and software such as Photoshop and Visual Studio Code to further their education into web development and design. As well as learning the fundamentals of programming, such as HTML, CSS, JavaScript, and PHP.<br /><br />
-                        3D Design students will be given the same opportunity to learn the industry leading software and skills. A few of these being Autodesk Maya, Inventor, AutoCAD, Unity, and Substance Painter. These students will also be provided with the skills to be able to program with languages such as C# and Java.<br /><br />
+                    3D Design students will be given the same opportunity to learn the industry leading software and skills. A few of these being Autodesk Maya, Inventor, AutoCAD, Unity, and Substance Painter. These students will also be provided with the skills to be able to program with languages such as C# and Java.<br /><br />
                     During the course of the year the students in either Web or 3D Design will be given the option to compete for SkillsUSA. The Iguana Games proceeds will go towards helping send web and 3D design students to these contests. SkillsUSA has both a state and national competition. In previous years several students have had the opportunity to make it to Louisville, KY for the National SkillsUSA Conference. In 2018, a high school team from the Web/3D Design class placed 1st place in the nation for Interactive Applications and Game Development and 2nd place for the adult division. We are extremely proud of the accomplishments of our students. Your participation in the event will continue to help students achieve their goals.</p>                    
             </div>
         </div>
