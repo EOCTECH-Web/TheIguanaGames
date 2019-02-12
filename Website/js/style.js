@@ -27,9 +27,6 @@ $(document).ready(function() {
     // This is the league drop down scripts
 
     $(".free").click(function() {
-        $("#placeholder").css("display", "block")
-        $("#add").css("display", "none")
-        $("#current").css("display", "none")
         $(".free").css("background-color", "#A1D7DA")
         $(".free").css("color", "#004f67ff")
         $(".old").css("background-color", "#fff")
@@ -39,9 +36,6 @@ $(document).ready(function() {
     });
 
     $(".old").click(function() {
-        $("#placeholder").css("display", "none")
-        $("#current").css("display", "block")
-        $("#add").css("display", "none")
         $(".free").css("background-color", "#fff")
         $(".free").css("color", "black")
         $(".old").css("background-color", "#A1D7DA")
@@ -51,9 +45,6 @@ $(document).ready(function() {
     });
 
     $(".add").click(function() {
-        $("#placeholder").hide()
-        $("#current").css("display", "none")
-        $("#add").css("display", "block")
         $(".free").css("background-color", "#fff")
         $(".free").css("color", "black")
         $(".old").css("background-color", "#fff")
@@ -228,6 +219,37 @@ $(document).ready(function() {
             $(".agree").prop('checked', false);
             $(".submit").hide();
             $("form").css("padding-bottom", "3.5%")
+        }
+    });
+
+    // The total calculation
+    let total = 15
+    $(".lunch").change(function() {
+        let value = $(".lunch").val();
+        if (value == "1") {
+            total = total + 5
+            $(".total").text("$" + total + ".00")
+        }
+        if (value == "2") {
+            total = total - 5
+            if (total < 15) {
+                total = 15
+            }
+            $(".total").text("$" + total + ".00")
+        }
+    });
+    $(".dinner").change(function() {
+        let value = $(".dinner").val();
+        if (value == "1") {
+            total = total + 7
+            $(".total").text("$" + total + ".00")
+        }
+        if (value == "2") {
+            total = total - 7
+            if (total < 15) {
+                total = 15
+            }
+            $(".total").text("$" + total + ".00")
         }
     });
 
