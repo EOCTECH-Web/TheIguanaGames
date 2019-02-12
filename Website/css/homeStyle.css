@@ -248,28 +248,7 @@ form .mainInputs {
     border: 0;
     padding-left: 15px;
 }
-.lunch {
-    background-color: #A1D7DA;
-    height: 55px;
-    color: #004F67;
-    font-size: 20px;
-    width: 100%;
-    border: 0;
-    padding-left: 15px;
-    position: relative;
-    top: 1%;
-}
-.dinner {
-    background-color: #A1D7DA;
-    height: 55px;
-    color: #004F67;
-    font-size: 20px;
-    width: 100%;
-    border: 0;
-    padding-left: 15px;
-    position: relative;
-    top: 1%;
-}
+
 .differentFormsButtons h2 {
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -319,23 +298,33 @@ button {
 
 /* Smash Bros area for form */
 
-.smashTeamButtons {
+.smashGroupButtons {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.smashTeamButtons button{
+.smashGroupButtons button{
     font-size: 20px;
     width: 100%;
     height: 50px;
     padding: 1%;
 }
-.smashTeamButtons button:hover {
+.smashGroupButtons button:hover {
     background-color: #004f67ff;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.newSmashTeam {
+.smashTeamChoice {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    padding: 1%;
+    margin-top: 28px;
+    width: 100%;
+}
+
+.smashNewTeam {
     background-color: #A1D7DA;
     height: 55px;
     color: #004F67;
@@ -343,6 +332,32 @@ button {
     width: 98%;
     border: 0;
     padding-left: 15px;
+    display: none;
+}
+
+/* Food area */
+
+.lunch {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    width: 100%;
+    border: 0;
+    padding-left: 15px;
+    position: relative;
+    top: 1%;
+}
+.dinner {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    width: 100%;
+    border: 0;
+    padding-left: 15px;
+    position: relative;
+    top: 1%;
 }
 
 /* Ending area for form */

@@ -27,6 +27,7 @@ $(document).ready(function() {
     // This is the league drop down scripts
 
     $(".free").click(function() {
+        $(".newSmashTeam").slideUp()
         $(".free").css("background-color", "#A1D7DA")
         $(".free").css("color", "#004f67ff")
         $(".old").css("background-color", "#fff")
@@ -36,6 +37,7 @@ $(document).ready(function() {
     });
 
     $(".old").click(function() {
+        $(".newSmashTeam").slideUp()
         $(".free").css("background-color", "#fff")
         $(".free").css("color", "black")
         $(".old").css("background-color", "#A1D7DA")
@@ -45,6 +47,7 @@ $(document).ready(function() {
     });
 
     $(".add").click(function() {
+        $(".newSmashTeam").slideDown()
         $(".free").css("background-color", "#fff")
         $(".free").css("color", "black")
         $(".old").css("background-color", "#fff")
