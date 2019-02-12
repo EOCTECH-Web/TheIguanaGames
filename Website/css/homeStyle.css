@@ -185,6 +185,8 @@ form .mainInputs {
     font-size: 20px;
 }
 
+/* League of Legends form area */
+
 .groupChoices {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -257,6 +259,17 @@ form .mainInputs {
     position: relative;
     top: 1%;
 }
+.dinner {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    width: 100%;
+    border: 0;
+    padding-left: 15px;
+    position: relative;
+    top: 1%;
+}
 .differentFormsButtons h2 {
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -266,7 +279,7 @@ button {
     box-sizing: border-box;
 }
 
-/* Free agent hidden inputs */
+/* League free agent hidden inputs */
 
 .mainPos {
     width: 100%;
@@ -304,6 +317,36 @@ button {
     cursor: pointer;
 }
 
+/* Smash Bros area for form */
+
+.smashTeamButtons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.smashTeamButtons button{
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 1%;
+}
+.smashTeamButtons button:hover {
+    background-color: #004f67ff;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.newSmashTeam {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    width: 98%;
+    border: 0;
+    padding-left: 15px;
+}
+
+/* Ending area for form */
+
 .waiver {
     width: 96%;
     margin-top: 3%;
@@ -333,6 +376,9 @@ button {
 .submit:hover {
     cursor: pointer;
     filter: brightness(.9)
+}
+.cardIcons {
+    width: 40%;
 }
 
 /* This is the right column of the grid */
