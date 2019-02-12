@@ -100,15 +100,15 @@ $(document).ready(function() {
     });
     $(".midMain").click(function() {
         $(".topMain").css("background-color", "")
-        $(".topMain").val(0)
+        $(".topMain").css("color", "black")
         $(".jungleMain").css("background-color", "")
-        $(".jungleMain").val(0)
+        $(".jungleMain").css("color", "black")
         $(".midMain").css("background-color", "#A1D7DA")
-        $(".midMain").val(0)
+        $(".midMain").css("color", "#004f67ff")
         $(".adcMain").css("background-color", "")
-        $(".adcMain").val(0)
+        $(".adcMain").css("color", "black")
         $(".supportMain").css("background-color", "")
-        $(".supportMain").val(0)
+        $(".supportMain").css("color", "black")
     });
     $(".adcMain").click(function() {
         $(".topMain").css("background-color", "")
