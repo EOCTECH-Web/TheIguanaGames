@@ -365,8 +365,77 @@ button {
 
 /* AGENDA CSS */
 
-
-
+#agenda {
+    background-color: #fff;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+#agenda_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#agenda_left {
+    background-image:url("../images/agendastock.png");
+    background-size: cover;
+    height: 500px;
+    border: 10px solid #A1D7DA;
+}
+#agenda_right {
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+#agenda_right div {
+    text-align: center;
+}
+#agenda_section {
+    background-color: #efefef;
+    padding: 25px;
+    box-sizing: border-box;
+}
+#agenda_right div p {
+    color: #004f67ff;
+}
+#agenda_right div h2 {
+    color: #EDC164;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+.agenda_num {
+    background-color: #004f67ff;
+    color: #EDC164;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #EDC164;
+    padding: 10px;
+    line-height: 28px;
+    font-family: 'Anton', sans-serif;
+    margin: auto;
+}
+#mission {
+    width: 200px;
+    font-size: 0.8em;
+    line-height: 21px;
+    position: relative;
+    top: 80px;
+    left: 75px;
+    color: #004f67ff;
+    float: right;
+    background-color: #edc164;
+    padding: 20px;
+}
+#mission strong {
+    font-family: 'Anton', sans-serif;
+    color: #004f67ff;
+    font-weight: normal;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
 
 
 /* END OF AGENDA CSS */
