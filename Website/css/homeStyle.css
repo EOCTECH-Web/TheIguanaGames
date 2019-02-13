@@ -138,7 +138,7 @@ body{
 
 .leftColumn{
     width: 100%;
-    background-color: #004f67ff;
+    background-color: #fff;
     color: #a1d7da;
 }
 
@@ -297,7 +297,9 @@ button {
 }
 
 /* Smash Bros area for form */
-
+.smashForm {
+    display: none;
+}
 .smashGroupButtons {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -322,6 +324,7 @@ button {
     padding: 1%;
     margin-top: 28px;
     width: 100%;
+    display: none;
 }
 
 .smashNewTeam {
@@ -331,6 +334,7 @@ button {
     font-size: 20px;
     width: 98%;
     border: 0;
+    margin-top: 28px;
     padding-left: 15px;
     display: none;
 }

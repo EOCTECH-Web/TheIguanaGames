@@ -7,11 +7,13 @@ $(document).ready(function() {
     $("#freeHidden").hide();
     $(".team_choice").hide();
     $(".cont_newteam").hide();
+    $(".smashForm").hide();
 
     $(".game_choice").change(function() {
         let value = $(".game_choice").val();
         if (value == "league") {
             $(".leagueForm").slideDown();
+            $(".")
             $(".smashForm").slideUp();
         }
         if (value == "smash") {
@@ -27,7 +29,8 @@ $(document).ready(function() {
     // This is the league drop down scripts
 
     $(".free").click(function() {
-        $(".newSmashTeam").slideUp()
+        $(".smashNewTeam").slideUp();
+        $(".smashTeamChoice").slideUp();
         $(".free").css("background-color", "#A1D7DA")
         $(".free").css("color", "#004f67ff")
         $(".old").css("background-color", "#fff")
@@ -37,7 +40,8 @@ $(document).ready(function() {
     });
 
     $(".old").click(function() {
-        $(".newSmashTeam").slideUp()
+        $(".smashNewTeam").slideUp();
+        $(".smashTeamChoice").slideDown();
         $(".free").css("background-color", "#fff")
         $(".free").css("color", "black")
         $(".old").css("background-color", "#A1D7DA")
@@ -47,7 +51,8 @@ $(document).ready(function() {
     });
 
     $(".add").click(function() {
-        $(".newSmashTeam").slideDown()
+        $(".smashNewTeam").slideDown();
+        $(".smashTeamChoice").slideUp();
         $(".free").css("background-color", "#fff")
         $(".free").css("color", "black")
         $(".old").css("background-color", "#fff")
@@ -207,6 +212,10 @@ $(document).ready(function() {
         $(".supportSub").css("color", "#004f67ff")
     });
 
+    // This is the smash bros side of the js
+
+    
+
     // check to see if user agrees to liability waiver or not
     $(".agree").click(function() {
         let checked = $('.agree').prop('checked');
@@ -259,15 +268,6 @@ $(document).ready(function() {
     // Waiver name fill in
     let firstName;
     let lastName;
-
-    $(".first").change(function () {
-        firstName = $(".first").val();
-        lastName = $(".last").val();
-    });
-    $(".last").change(function () {
-        firstName = $(".first").val();
-        lastName = $(".last").val();
-    });
 
     $(".first").keyup(function() {
         let signature = $(".first").val() + " " + $(".last").val();
