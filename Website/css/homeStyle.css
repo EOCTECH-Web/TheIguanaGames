@@ -340,6 +340,10 @@ button {
 
 /* League free agent hidden inputs */
 
+.freeHidden p{
+    color: #004F67;
+    margin-bottom: 0px;
+}
 .mainPos {
     width: 100%;
     display: grid;
@@ -353,7 +357,7 @@ button {
     padding: 1%;
 }
 .mainPos button:hover {
-    background-color: #004f67ff;
+    background-color: #EDC164;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -371,7 +375,7 @@ button {
     padding: 1%;
 }
 .subPos button:hover {
-    background-color: #004f67ff;
+    background-color: #EDC164;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -391,7 +395,7 @@ button {
     padding: 1%;
 }
 .smashGroupButtons button:hover {
-    background-color: #004f67ff;
+    background-color: #EDC164;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -420,12 +424,12 @@ button {
 }
 
 /* Food area */
-form p, em {
+form .foodText, em {
     color: #004F67;
     margin: 0;
     padding: 0;
 }
-form p {
+form .foodText {
     margin-bottom: -15px;
 }
 .lunch {
@@ -479,9 +483,19 @@ form p {
     margin: auto;
     font-family: 'Anton', sans-serif;
 }
+.button20{
+    display: none;
+}
+.button22{
+    display: none;
+}
+.button27{
+    display: none;
+}
 .submit {
     width: 80%;
     height: 125px;
+    margin-top: 30px;
 }
 .submit:hover {
     cursor: pointer;
