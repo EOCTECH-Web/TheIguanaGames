@@ -125,6 +125,84 @@ body{
     position: absolute;
     margin-top: -6.5%;
 }*/
+
+/* AGENDA CSS */
+
+#agenda {
+    background-color: #fff;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+#agenda_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#agenda_left {
+    background-image:url("../images/agendastock.png");
+    background-size: cover;
+    height: 500px;
+    border: 10px solid #A1D7DA;
+}
+#agenda_right {
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+#agenda_right div {
+    text-align: center;
+}
+#agenda_section {
+    background-color: #efefef;
+    padding: 25px;
+    box-sizing: border-box;
+}
+#agenda_right div p {
+    color: #004f67ff;
+}
+#agenda_right div h2 {
+    color: #EDC164;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+.agenda_num {
+    background-color: #004f67ff;
+    color: #EDC164;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #EDC164;
+    padding: 10px;
+    line-height: 28px;
+    font-family: 'Anton', sans-serif;
+    margin: auto;
+}
+#mission {
+    width: 200px;
+    font-size: 0.8em;
+    line-height: 21px;
+    position: relative;
+    top: 80px;
+    left: 75px;
+    color: #004f67ff;
+    float: right;
+    background-color: #edc164;
+    padding: 20px;
+}
+#mission strong {
+    font-family: 'Anton', sans-serif;
+    color: #004f67ff;
+    font-weight: normal;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+
+/* END OF AGENDA CSS */
+
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -138,7 +216,7 @@ body{
 
 .leftColumn{
     width: 100%;
-    background-color: #004f67ff;
+    background-color: #fff;
     color: #a1d7da;
 }
 
@@ -157,9 +235,9 @@ form .topInputs {
     width: 90%;
     margin: auto;
     padding: 4%;
-    background-color: #a1d7da;
+    background-color: #efefefef;
+    border: 1px solid #004f67ff;
     font-size: 20px;
-    border: 0;
 }
 ::placeholder {
     color: #004f67ff;
@@ -208,7 +286,7 @@ form .mainInputs {
 .waiver {
     width: 100%;
     height: 200px;
-    background-color: #a1d7da; 
+    background-color: #efefef; 
     overflow-y: scroll;
 }
 
@@ -224,28 +302,30 @@ form .mainInputs {
     letter-spacing: 2px;
 }
 .game_choice {
-    background-color: #A1D7DA;
+    background-color: #efefef;
     position: relative;
     top: -15px;
     height: 55px;
     color: #004F67;
+    border: 1px solid #004F67;
 }
 .team_choice {
-    background-color: #A1D7DA;
+    background-color: #efefef;
     height: 55px;
     color: #004F67;
     font-size: 20px;
     padding: 1%;
     margin-top: 28px;
     width: 100%;
+    border: 1px solid #004F67;
 }
 .newteam {
-    background-color: #A1D7DA;
+    background-color: #efefef;
     height: 55px;
     color: #004F67;
     font-size: 20px;
     width: 98%;
-    border: 0;
+    border: 1px solid #004F67;
     padding-left: 15px;
 }
 
@@ -254,7 +334,8 @@ form .mainInputs {
     padding-bottom: 0px;
 }
 button {
-    border: 1px solid #A1D7DA;
+    border: 1px solid #004F67;
+    color: #004F67;
     box-sizing: border-box;
 }
 
@@ -297,7 +378,9 @@ button {
 }
 
 /* Smash Bros area for form */
-
+.smashForm {
+    display: none;
+}
 .smashGroupButtons {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -322,6 +405,7 @@ button {
     padding: 1%;
     margin-top: 28px;
     width: 100%;
+    display: none;
 }
 
 .smashNewTeam {
@@ -331,14 +415,22 @@ button {
     font-size: 20px;
     width: 98%;
     border: 0;
+    margin-top: 28px;
     padding-left: 15px;
     display: none;
 }
 
 /* Food area */
-
+form p, em {
+    color: #004F67;
+    margin: 0;
+    padding: 0;
+}
+form p {
+    margin-bottom: -15px;
+}
 .lunch {
-    background-color: #A1D7DA;
+    background-color: #efefef;
     height: 55px;
     color: #004F67;
     font-size: 20px;
@@ -347,9 +439,10 @@ button {
     padding-left: 15px;
     position: relative;
     top: 1%;
+    border: 1px solid #004F67;
 }
 .dinner {
-    background-color: #A1D7DA;
+    background-color: #efefef;
     height: 55px;
     color: #004F67;
     font-size: 20px;
@@ -358,6 +451,7 @@ button {
     padding-left: 15px;
     position: relative;
     top: 1%;
+    border: 1px solid #004F67;
 }
 
 /* Ending area for form */
@@ -369,6 +463,7 @@ button {
     padding-top: 2px; 
     padding-bottom: 2px;
     color: #004f67ff;
+    border: 1px solid #004f67ff
 }
 
 .submitAndTotal {
@@ -378,6 +473,7 @@ button {
     text-align: center;
     margin-top: 3%;
     margin-bottom: 3%;
+    color: #004f67ff;
 }
 .total {
     font-size: 60pt;
@@ -400,19 +496,19 @@ button {
 
 .rightColumn{
     width: 100%;
-    background-color: #a1d7da;
+    background-color: #efefef;
     padding-bottom: 42px;
+    
 }
 .about{
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 20px;
+    font-size: 1em;
     color: #004f67ff;
     line-height: 30px;
-    letter-spacing: 2px;
 }
 .rightColumn h1{
-    color: #004f67ff;
+    color: #EDC164;
     font-size: 50px;
 }
 .footer{
