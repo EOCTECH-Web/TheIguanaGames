@@ -13,7 +13,6 @@ $(document).ready(function() {
         let value = $(".game_choice").val();
         if (value == "league") {
             $(".leagueForm").slideDown();
-            $(".")
             $(".smashForm").slideUp();
         }
         if (value == "smash") {

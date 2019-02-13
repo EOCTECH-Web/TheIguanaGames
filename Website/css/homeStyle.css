@@ -69,7 +69,7 @@ body{
     box-sizing: border-box;
 }
 .section_top .logo {
-    max-width: 30%;
+    width: 25%;
     margin: auto;
     margin-top: 50px;
 }
@@ -105,7 +105,6 @@ body{
 }
 
 .scrollText {
-    height: 75px;
     padding-top: 0px;
     z-index: 99;
     box-sizing: border-box;
@@ -221,7 +220,7 @@ body{
 }
 
 form {
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
 }
 form h2 {
@@ -481,8 +480,8 @@ form p {
     font-family: 'Anton', sans-serif;
 }
 .submit {
-    width: 100%;
-    height: 150px;
+    width: 80%;
+    height: 125px;
 }
 .submit:hover {
     cursor: pointer;
@@ -496,16 +495,26 @@ form p {
 
 .rightColumn{
     width: 100%;
-    background-color: #efefef;
-    padding-bottom: 42px;
-    
+    background-color: #fff;
+}
+.rightColumn h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    color: #EDC164;
+    line-height: 30px;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 2px;
 }
 .about{
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     font-size: 1em;
     color: #004f67ff;
     line-height: 30px;
+    background-color: #efefef;
+    padding: 25px;
 }
 .rightColumn h1{
     color: #EDC164;
