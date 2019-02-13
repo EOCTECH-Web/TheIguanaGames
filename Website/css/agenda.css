@@ -185,8 +185,6 @@ form .mainInputs {
     font-size: 20px;
 }
 
-/* League of Legends form area */
-
 .groupChoices {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -248,7 +246,17 @@ form .mainInputs {
     border: 0;
     padding-left: 15px;
 }
-
+.lunch {
+    background-color: #A1D7DA;
+    height: 55px;
+    color: #004F67;
+    font-size: 20px;
+    width: 100%;
+    border: 0;
+    padding-left: 15px;
+    position: relative;
+    top: 1%;
+}
 .differentFormsButtons h2 {
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -258,7 +266,7 @@ button {
     box-sizing: border-box;
 }
 
-/* League free agent hidden inputs */
+/* Free agent hidden inputs */
 
 .mainPos {
     width: 100%;
@@ -296,72 +304,6 @@ button {
     cursor: pointer;
 }
 
-/* Smash Bros area for form */
-
-.smashGroupButtons {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-.smashGroupButtons button{
-    font-size: 20px;
-    width: 100%;
-    height: 50px;
-    padding: 1%;
-}
-.smashGroupButtons button:hover {
-    background-color: #004f67ff;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.smashTeamChoice {
-    background-color: #A1D7DA;
-    height: 55px;
-    color: #004F67;
-    font-size: 20px;
-    padding: 1%;
-    margin-top: 28px;
-    width: 100%;
-}
-
-.smashNewTeam {
-    background-color: #A1D7DA;
-    height: 55px;
-    color: #004F67;
-    font-size: 20px;
-    width: 98%;
-    border: 0;
-    padding-left: 15px;
-    display: none;
-}
-
-/* Food area */
-
-.lunch {
-    background-color: #A1D7DA;
-    height: 55px;
-    color: #004F67;
-    font-size: 20px;
-    width: 100%;
-    border: 0;
-    padding-left: 15px;
-    position: relative;
-    top: 1%;
-}
-.dinner {
-    background-color: #A1D7DA;
-    height: 55px;
-    color: #004F67;
-    font-size: 20px;
-    width: 100%;
-    border: 0;
-    padding-left: 15px;
-    position: relative;
-    top: 1%;
-}
-
-/* Ending area for form */
-
 .waiver {
     width: 96%;
     margin-top: 3%;
@@ -392,9 +334,6 @@ button {
     cursor: pointer;
     filter: brightness(.9)
 }
-.cardIcons {
-    width: 40%;
-}
 
 /* This is the right column of the grid */
 
@@ -422,3 +361,81 @@ button {
     color: #FFF;
     text-align: center;
 }
+
+
+/* AGENDA CSS */
+
+#agenda {
+    background-color: #fff;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+#agenda_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#agenda_left {
+    background-image:url("../images/agendastock.png");
+    background-size: cover;
+    height: 500px;
+    border: 10px solid #A1D7DA;
+}
+#agenda_right {
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+#agenda_right div {
+    text-align: center;
+}
+#agenda_section {
+    background-color: #efefef;
+    padding: 25px;
+    box-sizing: border-box;
+}
+#agenda_right div p {
+    color: #004f67ff;
+}
+#agenda_right div h2 {
+    color: #EDC164;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+.agenda_num {
+    background-color: #004f67ff;
+    color: #EDC164;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #EDC164;
+    padding: 10px;
+    line-height: 28px;
+    font-family: 'Anton', sans-serif;
+    margin: auto;
+}
+#mission {
+    width: 200px;
+    font-size: 0.8em;
+    line-height: 21px;
+    position: relative;
+    top: 80px;
+    left: 75px;
+    color: #004f67ff;
+    float: right;
+    background-color: #edc164;
+    padding: 20px;
+}
+#mission strong {
+    font-family: 'Anton', sans-serif;
+    color: #004f67ff;
+    font-weight: normal;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+
+/* END OF AGENDA CSS */
