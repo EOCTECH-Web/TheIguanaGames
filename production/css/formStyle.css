@@ -1,0 +1,35 @@
+* {
+    font-family: 'Anton', 'sans-serif';
+    font-size: 13pt;
+}
+body {
+    background-color: #004f67ff;
+    margin: 0;
+    padding: 0;
+}
+form {
+    width: 75%;
+    margin: auto;
+    background-color: #e0ecf8ff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    padding-bottom: 3.5%;
+}
+
+.differentForms {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+}
+.logo {
+    margin: auto;
+    width: 50%;
+    height: 140px;
+}
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    border: 2px solid #004f67ff;
+}
+

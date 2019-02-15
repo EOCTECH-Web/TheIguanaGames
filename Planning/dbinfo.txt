@@ -1,0 +1,17 @@
+Database
+db773711201
+
+Description
+TheIguanaGames
+
+Host name
+db773711201.hosting-data.io
+
+Port
+3306
+
+User name
+dbo773711201
+
+Type and version
+MySQL 5.5
